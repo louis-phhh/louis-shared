@@ -1,0 +1,15 @@
+{
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "version": "1.0.0",
+  "description": "Shared",
+  "author": "Louis Phan <louis.phhh@gmail.com>",
+  "scripts": {
+    "build": "tsc",
+    "prepare" : "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}

@@ -1,0 +1,1 @@
+export * as NATS_QUEUE_NAME from './nats-queue-name.constant';
