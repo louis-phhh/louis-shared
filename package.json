@@ -1,15 +1,30 @@
 {
+  "name": "@louis-phhh/louis-shared",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
-  "version": "1.0.0",
+  "files": [
+    "dist"
+  ],
+  "version": "1.0.6",
   "description": "Shared",
   "author": "Louis Phan <louis.phhh@gmail.com>",
+  "license": "ISC",
+  "keywords": [],
+  "homepage": "https://github.com/louis-phhh/louis-shared",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louis-phhh/louis-shared.git"
+  },
   "scripts": {
-    "build": "tsc",
-    "prepare" : "npm run build"
+    "copy-files": "copyfiles index.d.ts dist/",
+    "build": "tsc && npm run copy-files",
+    "prepare": "npm run build"
   },
   "devDependencies": {
+    "copyfiles": "^2.4.1",
     "typescript": "^4.7.4"
+  },
+  "bugs": {
+    "url": "https://github.com/louis-phhh/louis-shared/issues"
   }
 }

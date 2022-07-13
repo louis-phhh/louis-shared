@@ -1,1 +1,3 @@
-export const ACCOUNT_SERVICE = 'account_service';
+export const NATS_QUEUE_NAME = {
+  ACCOUNT_SERVICE: 'account_service',
+}
